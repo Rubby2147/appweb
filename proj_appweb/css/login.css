@@ -1,0 +1,83 @@
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: rgb(218, 233, 228);
+    padding: 15px;
+    align-items: center;
+    height:max-content;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form, table{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: #5163b3;
+    padding: 5px -90px;
+    border-radius: 10px;
+    border-color: transparent;
+    box-sizing: 2px;
+    align-items: center;
+    
+}
+
+input::placeholder{
+    color: #5163b3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input{
+    margin: 3px 0;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: lightblue;
+    border-color: transparent;
+}
+a{
+    border: none;
+    cursor: pointer;
+    display: inline-block; 
+    background-color: rgb(66, 183, 223);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    color: #121212;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 3px 0;
+    padding: 10px;
+    width: 46%;
+    border-radius: 5px;
+}
+a:hover{
+background-color: wheat;
+color: lightblue;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    display: inline-block; 
+    background-color: #121212;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    color: #3D178F;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 3px 0;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+}
+button:hover{
+background-color: rgb(66, 183, 223);
+}
+
+body h2{
+    color: rgb(66, 183, 223);
+}
+

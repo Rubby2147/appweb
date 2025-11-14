@@ -1,0 +1,90 @@
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+ 
+  .catalogo-item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+ 
+  .catalogo-item:hover {
+    transform: translateY(-5px);
+  }
+ 
+  .catalogo-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+ 
+  .catalogo-item h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: rgb(66, 183, 223);
+  }
+ 
+  .catalogo-item p {
+    font-size: 0.95rem;
+    color: #121212;
+    line-height: 1.5;
+  }
+ 
+  /* Seções de dicas */
+  .user-section {
+    margin: 2rem 1.5rem;
+    background-color: #5163b3;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+ 
+  .user-section h2 {
+    color: lightblue;
+    margin-bottom: 1rem;
+  }
+ 
+  .user-section ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: white;
+  }
+ 
+  .user-section ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #121212;
+  }
+ 
+  .user-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #999;
+    font-weight: bold;
+  }
+ 
+  /* Responsivo para mobile */
+  @media (max-width: 600px) {
+    .catalogo-item img {
+      width: 60px;
+      height: 60px;
+    }
+ 
+    .catalogo-item h3 {
+      font-size: 1rem;
+    }
+ 
+    .catalogo-item p,
+    .user-section p,
+    .user-section ul li {
+      font-size: 0.9rem;
+    }
+  }
+ 

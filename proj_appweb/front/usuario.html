@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechParts - Área do Usuário</title>
+  <link rel="stylesheet" href="/proj_appweb/css/usuario.css" />
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <ul>          
+        <li><a href="/proj_appweb/front/loja.html">loja</a></li>
+        <li><a href="/proj_appweb/front/estudo.html">Estudo</a></li>
+        <li><a href="/proj_appweb/front/inserir_prod.html">inserir item</a></li>
+      </ul>
+    </div>
+
+    <nav class="menu-bar">
+      <button id="menu-button" class="header-button">
+        <i data-lucide="menu"></i>
+        Menu
+      </button>
+    </nav>
+
+    <h1>AREA DO USUARIO</h1>
+
+
+    <div class="user-area">
+      <button id="user-menu-button" class="header-button">
+        <i data-lucide="user"></i>
+        Perfil
+      </button>
+      <div id="user-menu" class="hidden">
+        <ul>
+          <li><a href="/proj_appweb/front/usuario.html">Minha Conta</a></li>
+          <li><a href="/proj_appweb/front/carrinho.html">Carrinho</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+  <br>
+  
+  
+  <img src="/proj_appweb/img/user.png" alt=""> 
+  <main>
+    <section class="nome"><h2>nome: 
+      <h2 class="nometext">João Silva</h2></h2>
+    </section>
+    <br>
+    <section class="email"><h2>email: <h2 class=" nometext">joão@gmail.com</h2></h2></section>
+    <p>Bem-vindo à sua área pessoal. Aqui você pode acessar todas as funcionalidades do site.</p>
+  </main>
+
+
+  </section>
+
+  <section class="products" id="produtos">
+    <div class="product-card">
+      <img src="/proj_appweb/img/Placa_de_video.png" alt="Placa de Vídeo">
+      <div class="product-info">
+        <h3>Placa de Vídeo RTX 4080</h3>
+        <p>Desempenho de alto nível para jogos e edição.</p>
+        <p class="price">R$ 6.499,00</p>
+        <a href="#">adicionar</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/proj_appweb/img/Processador.png" alt="Processador">
+      <div class="product-info">
+        <h3>Processador Intel i9</h3>
+        <p>Poder de processamento extremo para multitarefas.</p>
+        <p class="price">R$ 3.199,00</p>
+        <a href="#">adicionar</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/proj_appweb/img/ssd.png" alt="SSD NVMe">
+      <div class="product-info">
+        <h3>SSD NVMe 1TB</h3>
+        <p>Velocidade absurda para carregar tudo em segundos.</p>
+        <p class="price">R$ 599,00</p>
+        <a href="#">adicionar</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="/proj_appweb/js/script.js"></script>
+
+</html>

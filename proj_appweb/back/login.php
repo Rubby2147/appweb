@@ -1,17 +1,17 @@
 <?php
-
 session_start();
-
 include 'conexao.php';
 
 $usuario = $_POST['usuario'];
 $senha = md5($_POST['senha']);
 
-$sql = "select * from usuarios where usuario='$usuario' and senha='$senha'";
+$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND senha='$senha'";
 $result = $conn->query($sql);
+
 if ($result->num_rows > 0) {
-    $_SESSION['usuario']= $usuario;
-    header('location: dashboard.php');
-}    else{
-    echo'login invalido!';
+    $_SESSION['usuario'] = $usuario;
+    header("Location: dashboard.php");
+} else {
+    echo "Login inválido!";
 }
+?>

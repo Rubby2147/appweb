@@ -1,9 +1,63 @@
-<link rel="stylesheet" href="/css/style.css">
-<form action="/back/inserir_prod.php" method="post">
-    <h2>inserir produtos</h2>
-    <input type="text" nome="nome" placeholder="nome do produto" required> <br>
-    <input type="text" nome="quantidade" placeholder="quantidade" required> <br>
-    <input type="text" nome="preco" placeholder="preco" required> <br>
-    <button type="submit">inserir</button>
-    
-</form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechParts - Área do Usuário</title>
+    <link rel="stylesheet" href="/proj_appweb/css/Inserir.css">
+
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="sidebar">
+            <ul>
+                <li><a href="/proj_appweb/front/loja.html">loja</a></li>
+                <li><a href="/proj_appweb/front/estudo.html">Estudo</a></li>
+                <li><a href="/proj_appweb/front/inserir_prod.html">inserir item</a></li>
+            </ul>
+        </div>
+
+        <nav class="menu-bar">
+            <button id="menu-button" class="header-button">
+                <i data-lucide="menu"></i>
+                Menu
+            </button>
+        </nav>
+
+        <h1>TechParts</h1>
+
+
+        <div class="user-area">
+            <button id="user-menu-button" class="header-button">
+                <i data-lucide="user"></i>
+                Perfil
+            </button>
+            <div id="user-menu" class="hidden">
+                <ul>
+                    <li><a href="/proj_appweb/front/usuario.html">Minha Conta</a></li>
+                    <li><a href="/proj_appweb/front/carrinho.html">Carrinho</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <br>
+    <form action="/proj_appweb/back/inserir_prod.php" method="POST">
+        <h2>Inserir Produto</h2>
+        <input type="text" name="nome" placeholder="Nome do Produto" required><br>
+        <input type="number" name="quantidade" placeholder="Quantidade" required><br>
+        <input type="number" step="0.01" name="valor" placeholder="valor" required><br>
+        <button class="form-button" type="submit">Inserir</button> <br>
+    </form>
+
+
+</body>
+<script src="/proj_appweb/js/script.js"></script>
+
+</html>

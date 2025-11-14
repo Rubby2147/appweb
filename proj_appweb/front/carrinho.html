@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechParts - Minhas Compras</title>
+
+  <link rel="stylesheet" href="/proj_appweb/css/carrinho.css">
+  <link rel="stylesheet" href="/proj_appweb/css/carrinho2.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <ul>
+        <li><a href="/proj_appweb/front/loja.html">loja</a></li>
+        <li><a href="/proj_appweb/front/estudo.html">Estudo</a></li>
+        <li><a href="/proj_appweb/front/inserir_prod.html">inserir item</a></li>
+      </ul>
+    </div>
+
+    <nav class="menu-bar">
+      <button id="menu-button" class="header-button">
+        <i data-lucide="menu"></i> Menu
+      </button>
+    </nav>
+
+    <h1>CARRINHO</h1>
+
+    <div class="user-area">
+      <button id="user-menu-button" class="header-button">
+        <i data-lucide="user"></i> Perfil
+      </button>
+      <div id="user-menu" class="hidden">
+        <ul>
+          <li><a href="/proj_appweb/front/usuario.html">Minha Conta</a></li>
+          <li><a href="/proj_appweb/front/carrinho.html">Carrinho</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="user-section">
+      <h2>Minhas Compras</h2>
+      <p>Aqui estão listadas todas as suas compras realizadas na plataforma:</p>
+
+      <div class="compras-lista">
+        <div class="compra-item">
+          <h3>Placa Mãe B450M</h3>
+          <p><strong>Data: 15/07/2025</strong></p>
+          <p><strong>Status: Entregue</strong></p>
+        </div>
+
+        <div class="compra-item">
+          <h3>Memória RAM 16GB DDR4</h3>
+          <p><strong>Data: 22/07/2025</strong></p>
+          <p><strong>Status: Em trânsito</strong></p>
+        </div>
+
+        <div class="compra-item">
+          <h3>Fonte 600W</h3>
+          <p><strong>Data: 01/08/2025</strong></p>
+          <p><strong>Status: Pagamento aprovado</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/proj_appweb/js/script.js"></script>
+</body>
+
+</html>
