@@ -19,7 +19,9 @@ form, table{
     border-color: transparent;
     box-sizing: 2px;
     align-items: center;
-    
+    border: 25px solid wheat;
+    border-bottom: 20px solid wheat;
+    border-top: 20px solid wheat;
 }
 
 input::placeholder{
@@ -54,7 +56,7 @@ a{
 }
 a:hover{
 background-color: wheat;
-color: lightblue;
+color: rgb(66, 183, 223);
 }
 
 button{

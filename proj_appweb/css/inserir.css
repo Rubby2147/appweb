@@ -149,8 +149,9 @@ form button{
 }
 
 form button:hover{
-    background-color: #1e1e1e;
+    background-color: wheat;
     color: rgb(66, 183, 223);
+    font-weight: bolder;
 }
 
 form h2{
